@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
-
+:root{
+   --main:#c9c1ac;
+}
 body{
    font-family: 'Pacifico', cursive;
    margin: 0;
    padding: 0;
+  
 
 }
 
@@ -22,3 +25,72 @@ body{
 .primary-color:hover{
     color:black;
 }
+
+#header{
+background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+ url('./images/three.jpeg') no-repeat fixed center center / cover;
+height: calc(100vh - 90px);
+width: 100%;
+position: relative;
+}
+
+.height{
+    height: calc(100vh - 90px);
+}
+
+.banner h1{
+    border-top: 3px dotted #c9c1ac;
+    border-bottom: 3px dotted #c9c1ac;
+    cursor: pointer;
+    font-size: 7rem;
+    cursor: normal;
+
+
+}
+
+small{
+    color:#c9c1ac
+}
+
+.main-btn{
+    color:#d3325f;
+    font-size: 2rem;
+    border:2px solid #d3325f;
+    transition: all .5s ease-in-out;
+    padding: .6rem 1rem;
+    cursor: pointer;
+}
+
+.main-btn:hover{
+    background-color: #c9c1ac;
+    color:#d3325f;
+}
+.header-link{
+    position: absolute;
+    font-size: 1rem;
+    background-color: var(--main);
+    bottom: 8%;
+    left:47%;
+    width: 70px;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    display: inline-block;
+    animation-name: zoom;
+    animation-fill-mode: forwards;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    
+    
+}
+@keyframes zoom{
+    0%{
+        bottom: 13%;
+    }
+    50%{
+        bottom: 8%;
+    }
+    100%{
+        bottom: 4%;
+    }
+}
+

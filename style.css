@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 :root{
    --main:#c9c1ac;
+   --primary-color:#d3325f;
 }
 body{
    font-family: 'Pacifico', cursive;
@@ -8,6 +9,10 @@ body{
    padding: 0;
   
 
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 .info{
@@ -124,6 +129,70 @@ small{
     background-color: #c9c1ac;
     color:#d3325f;
 }
+
+
+#special{
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+     url('./images/five.jpeg') no-repeat fixed center center / cover;
+    height:100vh;
+    width: 100%;
+    position: relative;
+    }
+.item{
+    position: relative;
+    overflow: hidden;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    transition: all .7s ease-in-out;
+
+
+}
+
+.img{
+    transition: all 1s ease-in-out;
+    border: 5px solid white;
+    
+}
+
+.item:hover .img{
+    transform: scale(1.2);
+    cursor: pointer;
+    opacity: .5;
+   
+    
+}
+
+.item_link{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color:var(--primary-color);
+    font-size: 2rem;
+    border-top: 3px solid #c9c1ac;
+    border-bottom: 3px solid #c9c1ac;
+    transition: all .5s ease-in-out;
+    opacity: 0;
+}
+
+
+.item:hover .item_link{
+    opacity: 1;
+    
+   
+}
+
+.item:hover {
+    outline: 5px solid var(--primary-color);
+    outline-offset: .8rem;
+
+   
+}
+
+
+
+
+
+
 
 
 

@@ -189,8 +189,8 @@ small{
 
 #about{
 
-    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
-    url('./images/five.jpeg') no-repeat fixed center center / cover;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url('./images/ten.jpeg') no-repeat fixed center center / cover;
    width: 100%;
    position: relative;
 
@@ -242,6 +242,24 @@ small{
 .about:hover .about-image:not(:hover){
 
     opacity: 0.5;
+}
+
+#review{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url('./images/ten.jpeg') no-repeat fixed center center / cover;
+   width: 100%;
+   position: relative;
+ 
+}
+
+.review-item{
+    background-color: rgba(255,255,255,.4);
+    clip-path: polygon(5% 0,100% 0,90% 100%,0 100%);
+    
+}
+
+.review-img{
+    width: 200px;
 }
 
 

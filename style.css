@@ -113,6 +113,13 @@ position: relative;
 small{
     color:#c9c1ac
 }
+.info-icons a{
+   transition: all .5s ease-in-out;
+}
+
+
+
+
 
 .main-btn{
     color:#d3325f;
@@ -136,6 +143,8 @@ small{
      url('./images/five.jpeg') no-repeat fixed center center / cover;
     width: 100%;
     position: relative;
+   
+    
     }
 .item{
     position: relative;
@@ -185,6 +194,63 @@ small{
     outline-offset: .8rem;
 
    
+}
+#nav{
+    background-color: #c9c1ac;
+    padding: 20px;
+    transition: all 2s ease-in-out;
+   
+}
+
+.navbar-brand{
+    font-size: 1.8rem;
+    transition: all .7s ease-in-out;
+}
+
+.navbar-brand:hover{
+    color:#242424;
+}
+
+.background-padding{
+    padding: 7px 7px;
+}
+
+.nav-link{
+    color:#242424;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: all .7s ease-in-out;
+}
+
+.nav-link:hover{
+    color:var(--primary-color);
+   
+}
+
+.toggler-btn{
+    border: 3px solid #d3325f;
+    padding: 7px;
+    transition: all 1s ease-in-out;
+}
+
+.bar{
+    width: 40px;
+    height: 2px;
+    margin: 7px;
+    background: var(--primary-color);
+    transition: all .2s ease-in-out;
+}
+
+.change .bar1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.change .bar2{
+    opacity: 0;
+}
+
+.change .bar3{
+    transform: rotate(45deg) translate(-5px,-8px);
+
 }
 
 #about{
@@ -350,6 +416,19 @@ color:#c41200;
 .contact-btn:hover{
 background-color: #c9c1ac;
 
+}
+footer{
+    background-color: #c9c1ac;
+    padding: 1rem;
+}
+
+#back{
+    position: fixed;
+    background-color: #b48c27;
+    padding: 1rem;
+    bottom:10%;
+    border-radius: 20%;
+    right: 3%;
 }
 
 

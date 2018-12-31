@@ -262,6 +262,17 @@ small{
 
 }
 
+#about h1{
+    color:#fff;
+    opacity: .7;
+}
+
+.lead{
+ color:#000!important;
+    
+}
+
+
 .about{
     position: relative
 }

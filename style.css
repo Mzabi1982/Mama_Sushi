@@ -7,12 +7,15 @@ body{
    font-family: 'Pacifico', cursive;
    margin: 0;
    padding: 0;
+   overflow: hidden;
+   box-sizing: border-box;
   
 
 }
 
 html{
     scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 .info{
@@ -35,7 +38,7 @@ html{
 background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
  url('./images/three.jpeg') no-repeat fixed center center / cover;
 height: calc(100vh - 90px);
-width: 100%;
+min-width: 100%;
 position: relative;
 margin: auto;
 }
@@ -450,9 +453,16 @@ footer{
 
   background:linear-gradient(rgba(255,255,255,.7),rgba(255,255,255,.7)),
   url('./images/five.jpeg') no-repeat fixed center center / cover;
- width: 100%;
- position: relative;
+ min-width: 100%;
+ 
 
+}
+
+
+@media only screen and  (max-width:500px){
+    #menu {
+        text-align: left;
+    }
 }
 
 

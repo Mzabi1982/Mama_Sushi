@@ -37,6 +37,7 @@ background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
 height: calc(100vh - 90px);
 width: 100%;
 position: relative;
+margin: auto;
 }
 
 .height{
@@ -443,6 +444,16 @@ footer{
     right: 3%;
 }
 
+
+#menu{
+  padding: 3rem;
+
+  background:linear-gradient(rgba(255,255,255,.7),rgba(255,255,255,.7)),
+  url('./images/five.jpeg') no-repeat fixed center center / cover;
+ width: 100%;
+ position: relative;
+
+}
 
 
    

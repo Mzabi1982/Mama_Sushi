@@ -7,7 +7,6 @@ body{
    font-family: 'Pacifico', cursive;
    margin: 0;
    padding: 0;
-  
    box-sizing: border-box;
   
 
@@ -463,6 +462,16 @@ footer{
     #menu {
         text-align: left;
     }
+
+    #title{
+       font-size: 3rem;
+    }
+
+    .single-item-text h4{
+        display: none;
+    }
+
+    
 }
 
 

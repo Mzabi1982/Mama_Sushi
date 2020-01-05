@@ -42,7 +42,7 @@
 
                     <div class="banner text-center">
                         <h1 id="title" class="display-2 text-capitalize w-50 mx-auto ">
-                            <small>mama</small> <strong class="primary-color">sushi</strong>
+                           <strong class="primary-color">Mamasushi</strong>
                         </h1>
                         <a href="" id="bte" class="btn main-btn my-5 text-capitalize">order online</a>
                     </div>
@@ -53,6 +53,7 @@
             <i class="fas fa-arrow-down"></i>
         </a>
     </header>
+    <div class="slider"></div>
 
 
 
@@ -101,13 +102,11 @@
 
     <section class="py-5" id="special">
 
-
-
         <div class="container my-5">
             <div class="row parent-container">
 
 
-                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3 lefte">
                     <div class="item">
                         <img src="./images/five.jpeg" class="img img-fluid" alt="">
                         <a href="./images/five.jpeg">
@@ -116,7 +115,7 @@
                     </div>
                 </div>
 
-                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3 lefte">
                     <div class="item">
                         <img src="./images/seven.jpeg" class="img img-fluid" alt="">
                         <a href="./images/seven.jpeg">
@@ -125,7 +124,7 @@
                     </div>
                 </div>
 
-                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3 lefte">
                     <div class="item">
                         <img src="./images/eight.jpeg" class="img img-fluid" alt="">
                         <a href="./images/eight.jpeg">
@@ -134,7 +133,7 @@
                     </div>
                 </div>
 
-                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3 righte">
                     <div class="item">
                         <img src="./images/nine.jpeg" class="img img-fluid" alt="">
                         <a href="./images/nine.jpeg">
@@ -142,7 +141,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3 righte">
                     <div class="item">
                         <img src="./images/tow.jpeg" class="img img-fluid" alt="">
                         <a href="./images/tow.jpeg">
@@ -151,7 +150,7 @@
                     </div>
                 </div>
 
-                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3 righte">
                     <div class="item">
                         <img src="./images/seven.jpeg" class="img img-fluid" alt="">
                         <a href="./images/seven.jpeg">
@@ -340,7 +339,7 @@
         </div>
     </section>
 
-    <section id="review" class="py-5">
+    <!-- <section id="review" class="py-5">
         <div id="slider" class="carousel slide" data-ride="carousel">
 
             <div class="carousel-inner">
@@ -429,13 +428,13 @@
 
         </div>
 
-    </section>
+    </section> -->
 
     <section id="team" class="py-5">
         <div class="container">
             <div class="row">
                 <div class="col-9 col-sm-6 col-lg-3 mx-auto my-4">
-                    <div class="card">
+                    <div class="card premier">
                         <img src="./images/profil1.jpg" alt="" class="card-img-top">
                         <div class="card-body">
                             <div class="card-title">
@@ -455,7 +454,7 @@
                 </div>
 
                 <div class="col-9 col-sm-6 col-lg-3 mx-auto my-4">
-                    <div class="card">
+                    <div class="card deuxiem">
                         <img src="./images/profile2.jpeg" alt="" class="card-img-top">
                         <div class="card-body">
                             <div class="card-title">
@@ -474,7 +473,7 @@
 
                 </div>
                 <div class="col-9 col-sm-6 col-lg-3 mx-auto my-4">
-                    <div class="card">
+                    <div class="card troisiem">
                         <img src="./images/profile3.jpeg" alt="" class="card-img-top">
                         <div class="card-body">
                             <div class="card-title">
@@ -493,7 +492,7 @@
 
                 </div>
                 <div class="col-9 col-sm-6 col-lg-3 mx-auto my-4">
-                    <div class="card">
+                    <div class="card quatriem">
                         <img src="./images/profile4.jpeg" alt="" class="card-img-top">
                         <div class="card-body">
                             <div class="card-title">
@@ -612,7 +611,91 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
 
+        <script>
+
+window.sr = ScrollReveal();
+        sr.reveal('.lefte', {
+            duration: 1000,
+            origin: 'left',
+            distance: '100px'
+        });
+        
+        sr.reveal('.righte', {
+            duration: 1000,
+            origin: 'right',
+            distance: '100px'
+        });
+        sr.reveal('#special .container', {
+            duration: 1000,
+            origin: 'bottom',
+            distance: '100px'
+        });
+
+        sr.reveal('.premier', {
+            duration: 1000,
+            origin: 'bottom',
+            distance: '100px'
+        });
+
+        sr.reveal('.deuxiem', {
+            duration: 1500,
+            origin: 'bottom',
+            distance: '100px'
+        });
+
+        sr.reveal('.troisiem', {
+            duration: 2000,
+            origin: 'bottom',
+            distance: '100px'
+        });
+
+        sr.reveal('.quatriem', {
+            duration: 2500,
+            origin: 'bottom',
+            distance: '100px'
+        });
+
+        sr.reveal('#top-icons .row', {
+            duration: 3000,
+            origin: 'top',
+            distance: '1000px'
+        });
+        sr.reveal('.slider', {
+            duration: 3000,
+            origin: 'left',
+            distance: '1000px'
+        });
+        sr.reveal('#menu .container-fluid .row', {
+            duration: 2000,
+            origin: 'top',
+            distance: '500px'
+        });
+        
+
+
+anime({
+    targets: 'header',
+    translateY: [{
+        value: 300,
+        duration: 2000,
+
+    }, {
+        value: 0,
+        duration: 2000,
+
+    }],
+    rotate: {
+        value: '1turn',
+        easing: 'easeOutSine',
+    }
+
+})
+   
+</script>
 </body>
 
 </html>

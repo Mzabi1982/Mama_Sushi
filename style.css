@@ -13,6 +13,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 html {
@@ -37,11 +38,12 @@ html {
 
 #header {
   /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/three.jpeg') no-repeat center center / cover; */
-  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7fnCTfAofANHVP9dLpQDYBXKHbFBwXvGCF2FgBT9XqAhbS4Y3&s") no-repeat center center / cover;
+  background: url("https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500") no-repeat center center / cover;
   height: calc(100vh - 90px);
   width: 100%;
   position: relative;
   margin: auto;
+  overflow-x: hidden;
 }
 
 .height {
@@ -453,17 +455,23 @@ footer {
 }
 
 #menu {
-  padding: 3rem;
+  padding: 1rem;
 
   background: linear-gradient(rgba(255, 255, 255, 0.7),
       rgba(255, 255, 255, 0.7)),
     url("./images/five.jpeg") no-repeat fixed center center / cover;
-  min-width: 100%;
+  max-width: 100%;
+  margin: auto;
+
+
 }
+
+
 
 @media only screen and (max-width: 500px) {
   #menu {
-    text-align: left;
+    display: hidden !important;
+
   }
 
   #title {
